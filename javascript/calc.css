@@ -1,0 +1,32 @@
+body{
+    position: absolute;
+    margin:0;
+    padding:0;
+}
+.calc{
+    height:500px;
+    width:350px;
+    background-color:#4444;
+    border: 10px;
+    border-color: aqua;
+    border-radius: 20px;
+}
+input[type="button"]{
+    margin-top: 10px;
+    height:70px ;
+    width:80px;
+    font-size:20px;
+    border-radius:50%;
+    background-color: rgb(150, 115, 59);
+}
+input:active{
+    background-color: #999999;
+}
+input.text{
+    background-color: red;
+}
+#output{
+    height:100px;
+    width: 100%;
+    background-color: #333;
+}

@@ -1,0 +1,79 @@
+*{
+    margin :0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-image: url("car5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    background-color: rgb(232, 228, 224);
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+} nav ul{
+    width:100%;
+    list-style:none;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    
+}
+nav li{
+    height:50px;
+}
+nav a{
+    text-decoration: none;
+    height:100%;
+    display: flex;
+    padding :0 60px;
+    align-items: center;
+    color:black;
+}
+nav a:hover{
+    background-color: #eae7e7;
+
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top:0;
+    right:0;
+    height:100vh;
+    width:250px;
+    z-index: 999;
+    background-color: rgb(106, 95, 95);
+    box-shadow:rgba(222, 213, 213, 0.1);
+    display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10%);
+
+}
+.sidebar li{
+    width: 100%;
+
+}
+.sidebar a{
+width: 100%;
+}
+.menu{
+    display:none;
+}
+@media(max-width:800px){
+    .hideOnMobile{
+        display:none;
+    }
+    .menu{
+        display: block;
+    }
+}
+@media(max-width:400px){
+    .sidebar{
+        width:100%;
+    }
+}
